@@ -62,7 +62,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-8 px-8 sm:px-16 lg:px-28 overflow-hidden">
+    <section id="contact" className="relative py-8 px-4 sm:px-12 lg:px-24 overflow-hidden">
       {/* Ambient glow */}
       <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full bg-violet-700/10 blur-[100px]" />
 
@@ -105,10 +105,7 @@ export default function Contact() {
           className="xl:col-span-2 flex flex-col gap-4"
         >
           {/* Location / timezone */}
-          <div className="flex items-center gap-3 p-4 rounded-2xl border border-white/8 bg-white/[0.02] mb-2">
-            <IconMapPin className="w-4 h-4 text-violet-400 shrink-0" />
-            <span className="text-zinc-400 text-sm">Based in <span className="text-white font-medium">India</span> · Available worldwide</span>
-          </div>
+
 
           {/* Contact cards */}
           {CONTACT_CARDS.map((card, i) => (
@@ -149,7 +146,7 @@ export default function Contact() {
           <motion.div
             whileHover={{ boxShadow: "0 0 50px rgba(139,92,246,0.15)" }}
             transition={{ duration: 0.5 }}
-            className="rounded-[2.5rem] border border-white/10 bg-zinc-950/80 backdrop-blur-2xl p-8 sm:p-12 relative overflow-hidden group"
+            className="rounded-[2.5rem] border border-white/10 bg-zinc-950/80 backdrop-blur-2xl p-6 sm:p-12 relative overflow-hidden group"
           >
             {/* Inner dynamic light sweep */}
             <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />

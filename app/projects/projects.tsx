@@ -159,7 +159,7 @@ export default function Projects() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
-    <section id="projects" className="relative py-8 px-8 sm:px-16 lg:px-28 overflow-hidden">
+    <section id="projects" className="relative py-8 px-4 sm:px-12 lg:px-24 overflow-hidden">
       {/* Section ambient background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_20%,rgba(139,92,246,0.06),transparent_50%)] pointer-events-none" />
 

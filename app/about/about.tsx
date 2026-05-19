@@ -172,7 +172,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="relative py-8 px-8 sm:px-16 lg:px-28 overflow-hidden">
+    <section id="about" className="relative py-8 px-4 sm:px-12 lg:px-24 overflow-hidden">
       {/* Section header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

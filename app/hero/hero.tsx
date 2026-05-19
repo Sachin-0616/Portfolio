@@ -161,7 +161,7 @@ function HeroTitle({ displayed }: { displayed: string }) {
   }, []);
 
   return (
-    <div className="relative text-center px-4 md:px-8 max-w-4xl mx-auto">
+    <div className="relative text-center px-4 md:px-8 max-w-4xl mx-auto mt-32 sm:mt-0">
       {/* Ambient glowing floating layers */}
       <div ref={orb1} className="pointer-events-none absolute -top-24 left-1/4 w-[600px] h-[350px] rounded-full bg-gradient-to-br from-violet-600/15 to-cyan-500/8 blur-3xl -z-10" />
       <div ref={orb2} className="pointer-events-none absolute -top-12 right-1/4 w-[400px] h-[400px] rounded-full bg-gradient-to-br from-indigo-500/10 to-pink-500/8 blur-3xl -z-10" />
@@ -173,13 +173,13 @@ function HeroTitle({ displayed }: { displayed: string }) {
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="text-6xl sm:text-8xl lg:text-9xl font-black text-white leading-none tracking-tighter mb-2"
+        className="text-5xl sm:text-7xl lg:text-9xl font-black text-white leading-none tracking-tighter mb-2"
       >
         <span className="bg-gradient-to-br from-white to-zinc-400 bg-clip-text text-transparent drop-shadow-sm">
           Sachin
         </span>
         <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,92,246,0.5)]">
-          .
+          ...
         </span>
       </motion.h1>
 
@@ -188,7 +188,7 @@ function HeroTitle({ displayed }: { displayed: string }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35, duration: 0.8 }}
-        className="text-2xl sm:text-3xl font-black text-zinc-300 mb-6 min-h-[2.5rem] tracking-tight"
+        className="text-xl sm:text-2xl lg:text-3xl font-black text-zinc-300 mb-6 min-h-[2.5rem] tracking-tight"
       >
         <span className="text-violet-400">{displayed}</span>
         <motion.span
@@ -219,14 +219,14 @@ function HeroTitle({ displayed }: { displayed: string }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.65, duration: 0.7 }}
-        className="flex flex-wrap items-center justify-center gap-4.5 mb-10 md:mb-14"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 md:mb-14 w-full px-4 sm:px-0"
       >
         <motion.a
           href="#projects"
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.98 }}
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-          className="group inline-flex items-center gap-2 px-8.5 py-4 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold text-sm tracking-wide hover:shadow-[0_0_35px_rgba(139,92,246,0.45)] transition-all duration-300"
+          className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold text-sm tracking-wide hover:shadow-[0_0_35px_rgba(139,92,246,0.45)] transition-all duration-300 w-full sm:w-auto"
         >
           View My Work
           <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -238,7 +238,7 @@ function HeroTitle({ displayed }: { displayed: string }) {
           whileHover={{ scale: 1.05, y: -2, borderColor: 'rgba(255,255,255,0.35)', backgroundColor: 'rgba(255,255,255,0.06)' }}
           whileTap={{ scale: 0.98 }}
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-          className="inline-flex items-center gap-2 px-8.5 py-4 rounded-full border border-white/15 text-white font-bold text-sm tracking-wide transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/15 text-white font-bold text-sm tracking-wide transition-all duration-300 w-full sm:w-auto"
         >
           Get in Touch
         </motion.a>

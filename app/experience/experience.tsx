@@ -56,7 +56,7 @@ const TIMELINE = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-8 px-8 sm:px-16 lg:px-28">
+    <section id="experience" className="relative py-8 px-4 sm:px-12 lg:px-24">
       {/* Decorative ambient lighting */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(167,139,250,0.03),transparent_50%)] pointer-events-none" />
 
@@ -86,7 +86,7 @@ export default function Experience() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, type: 'spring', stiffness: 80 }}
               whileHover={{ y: -5, scale: 1.01 }}
-              className="rounded-[28px] border border-white/[0.08] bg-zinc-950/60 p-8 sm:p-10 shadow-2xl hover:border-cyan-500/40 hover:shadow-[0_0_50px_rgba(34,211,238,0.2)] transition-all duration-700 backdrop-blur-2xl relative overflow-hidden group text-left w-full flex flex-col md:flex-row md:items-center justify-between gap-12 lg:gap-24"
+              className="rounded-[28px] border border-white/[0.08] bg-zinc-950/60 p-6 sm:p-10 shadow-2xl hover:border-cyan-500/40 hover:shadow-[0_0_50px_rgba(34,211,238,0.2)] transition-all duration-700 backdrop-blur-2xl relative overflow-hidden group text-left w-full flex flex-col md:flex-row md:items-center justify-between gap-12 lg:gap-24"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 blur-2xl" />
               
@@ -186,7 +186,7 @@ export default function Experience() {
                     viewport={{ once: true, margin: '-100px' }}
                     transition={{ duration: 0.8, delay: i * 0.1, type: 'spring', stiffness: 80, damping: 20 }}
                     whileHover={{ y: -5, scale: 1.02 }}
-                    className={`rounded-[32px] border p-8 transition-all duration-500 backdrop-blur-xl relative overflow-hidden group w-full ${item.active
+                    className={`rounded-[32px] border p-6 sm:p-8 transition-all duration-500 backdrop-blur-xl relative overflow-hidden group w-full ${item.active
                       ? 'border-violet-500/50 bg-violet-950/20 shadow-[0_8px_32px_rgba(139,92,246,0.15)] hover:border-violet-500/80 hover:shadow-[0_0_50px_rgba(139,92,246,0.3)]'
                       : 'border-white/[0.08] bg-zinc-950/60 shadow-xl hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]'
                       }`}
